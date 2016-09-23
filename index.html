@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>Joe Nguyen</title>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Joe Nguyen</title>
     <!-- CSS STYLES -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,38 +17,58 @@
     <![endif]-->
   </head>
   <body>
-    <nav>
-      <div id="row">
-        <a href="#graphic" class="smoothScroll" id="logo">JOE NGUYEN</a>
-      </div>
-      <div>
-        <ul id="row nav-small" style="padding-left: 0px">
-          <li><a href="#about" class="smoothScroll">joe</a></li>
-          <li><a href="#experience" class="smoothScroll">experience</a></li>
-          <li><a href="#projects" class="smoothScroll">projects</a></li>
-          <li><a href="#skills" class="smoothScroll">skills</a></li>
-          <li><a href="https://www.facebook.com/joe.a.nguyen"><i class="fa fa-facebook-official fa-1x"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/joenguyendev"><i class="fa fa-linkedin fa-1x"></i></a></li>
-          <li><a href="https://github.com/jnguyen1990"><i class="fa fa-github-square fa-1x"></i></a></li>
-        </ul>
-      </div>
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top whitenav whitenavtext">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">JOE NGUYEN</a> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#about" class="smoothScroll color-me">joe</a></li>
+            <li><a href="#experience" class="smoothScroll">experience</a></li>
+            <li><a href="#projects" class="smoothScroll">projects</a></li>
+            <li><a href="#skills" class="smoothScroll">skills</a></li>
+            <li><a href="https://www.facebook.com/joe.a.nguyen" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joenguyendev" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/jnguyen1990" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            <li><a href="mailto:joe@joeanguyen.com?Subject=Hello%20Joe""><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-    <div id="graphic">
+
+
+    <div id="graphic" class="pad-section">
+        <header>
+          <h1>Things are fluid in this world, and if you don't remain fluid, you get lost in the sauce.</h1>
+          <p>- Talib Kweli</p>
+        </header>
     </div>
 
+
     <div id="about" class="pad-section">
-      <div class="container hideme">
+      <div class="container">        
         <div class="col-sm-3 about-image">
-          <img src="images/DSC_6486-crop-border.png" alt="me"/>
+          <img class="about-image" src="images/profile_square.jpg" alt="me"/>
         </div>
         <div class="col-sm-9 about-text">
-          <p class="lead">Hi! I'm Joe Nguyen and a software developer living Manitoba, Canada.</p>
-          <p class="lead">I'm a gym rat, an aspiring foodie and a tenacious amatuer halloween costume designer. Currently, I am working as a software developer in my home-town of Steinbach at Rotessa.</p>
+          <p class="lead">Hi! I'm Joe Nguyen and a software developer living in Manitoba, Canada.</p>
+          <p class="lead">I'm a gym rat, an aspiring foodie and a tenacious amateur halloween costume designer. Currently, I am working as a software developer in my home-town of Steinbach at Rotessa.</p>
           <!-- <p class="lead">I love creating and designing new apps either solo or as a part of a team.</p> -->
           <p><a href="mailto:joe@joeanguyen.com?Subject=Hello%20Joe!" class="btn btn-lg btn-default">SAY HELLO!</a></p>
         </div>
       </div>
     </div>
+
     <div id="experience" class="pad-section">
       <div class="container">
         <h1 class="section-title hideme">EXPERIENCE</h1>
@@ -64,7 +80,7 @@
             <p class="lead"><strong>SOFTWARE DEVELOPER - Rotessa Inc.</strong></p>
             <p class="lead">2015 - Present</p>
             <p class="lead">Rotessa is a small company that people across Canada use to schedule and process their direct debits. What makes Rotessa different is how we focus on the process, keeping it simple and straightforward for the user.</p>
-            <p class="lead">Since I'm the only software developer at Rotessa, I'm in charge of maintaining the current Ruby on Rails application, adding new features and integrations, and managing consultants for work that we contract out. I love that since we're small my opinions and ideas are considered when deciding future development.</p>          
+            <p class="lead">Since I'm the only software developer at Rotessa, I'm in charge of maintaining the current Ruby on Rails application, adding new features and integrations, and managing consultants for work that we contract out. I love that since we're small, my opinions and ideas are considered when deciding future development.</p>          
             <p class="experience-footer"><i class="fa fa-map-marker fa-1x"></i>Steinbach, Manitoba |
             <i class="fa fa-external-link fa-1x"></i><a href="http://rotessa.com" class="experience-link" target="_blank">rotessa.com</a></p>
           </div>
@@ -90,111 +106,110 @@
         </div>
       </div>
     </div>
+
     <div id="projects" class="pad-section">
       <div class="container">
-      <h2 class="section-title hideme">PROJECTS</h2>
-      <div class="col-sm-3 about-image hideme">
-        <img src="images/filler.png" alt="codecheetah" align="middle"/>
+        <h2 class="section-title hideme">PROJECTS</h2>
+        <div class="col-sm-4 about-image hideme">
+          <img src="images/filler.png" alt="codecheetah" align="middle"/>
+        </div>
+        <div class="col-sm-8 about-text hideme">
+          <p class="lead"><strong>CODE CHEETAH</strong></p>
+          <p class="lead">A Ruby on Rails application that compare benchmarks between software updates.</p>
+          <i class="fa fa-external-link fa-1x"></i><a href="https://github.com/samuel-massinon/CodeCheetah/" class="project-link" target="_blank">See project on GitHub</a></p>
+        </div> 
       </div>
-      <div class="col-sm-8 about-text hideme">
-        <p class="lead"><strong>CODE CHEETAH</strong></p>
-        <p class="lead">A Ruby on Rails application that compare benchmarks between software updates.</p>
-        <i class="fa fa-external-link fa-1x"></i><a href="https://github.com/samuel-massinon/CodeCheetah/" class="project-link" target="_blank">See project on GitHub</a></p>
-      </div> 
-      </div>   
     </div>
+
     <div id="skills" class="pad-section">
       <div class="container">
         <h2 class="section-title hideme">TECHNICAL SKILLS</h2>
-          <div class="col-md-4 hideme">
-            <p class="skills-sub-header"></i> PROGRAMMING</p>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Ruby on Rails</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>               
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">HTML/CSS</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">SQL</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Python</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Java</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">C</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Assembly LC3</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
+        <div class="col-md-4 hideme">
+          <p class="skills-sub-header"></i> PROGRAMMING</p>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Ruby on Rails</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>               
           </div>
-          <div class="col-md-4 hideme">
-            <p class="skills-sub-header">DESIGN</p>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Agile Development</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>              
-            </div>
-
-            <div class="row">
-              <div class="col-xs-6 skills-label">Object-Oriented Programming</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Unit, Integration and Acceptance Testing</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Continuous Integration</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
-            </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">HTML/CSS</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>
           </div>
-          <div class="col-md-4 hideme">
-            <p class="skills-sub-header">TOOLS</p>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Sublime Text Editor</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>              
-            </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">SQL</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Python</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Java</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">C</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Assembly LC3</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+        </div>
+        <div class="col-md-4 hideme">
+          <p class="skills-sub-header">DESIGN</p>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Agile Development</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>              
+          </div>
 
-            <div class="row">
-              <div class="col-xs-6 skills-label">Git</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>              
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Eclipse IDE</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>              
-            </div>
-            <div class="row">
-              <div class="col-xs-6 skills-label">Concurrent Versions System (CVS)</div>
-              <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>              
-            </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Object-Oriented Programming</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Unit, Integration and Acceptance Testing</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Continuous Integration</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>
+          </div>
+        </div>
+        <div class="col-md-4 hideme">
+          <p class="skills-sub-header">TOOLS</p>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Sublime Text Editor</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>              
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6 skills-label">Git</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i></div>              
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Eclipse IDE</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>              
+          </div>
+          <div class="row">
+            <div class="col-xs-6 skills-label">Concurrent Versions System (CVS)</div>
+            <div class="col-xs-6"><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i><i class="fa fa-star-o fa-1x star"></i></div>              
           </div>
         </div>
       </div>
-      <div id="footer" class="pad-section">
-        <a href="mailto:joe@joeanguyen.com?Subject=Hello%20Joe!"><i class="fa fa-envelope fa-1x footer-icon"></i></a>
+    </div>
 
-        <a href="https://www.facebook.com/joe.a.nguyen" target="_blank"><i class="fa fa-facebook-official fa-1x footer-icon"></i></a>
-        <a href="https://www.linkedin.com/in/joenguyendev" target="_blank"><i class="fa fa-linkedin fa-1x footer-icon"></i></a>
-        <a href="https://github.com/jnguyen1990" target="_blank"><i class="fa fa-github-square fa-1x footer-icon"></i></a>
-        </h4>
-      </div>
+    <div id="footer" class="pad-section">
+      <a href="https://www.facebook.com/joe.a.nguyen" target="_blank"><i class="fa fa-facebook-official fa-1x footer-icon"></i></a>
+      <a href="https://www.linkedin.com/in/joenguyendev" target="_blank"><i class="fa fa-linkedin fa-1x footer-icon"></i></a>
+      <a href="https://github.com/jnguyen1990" target="_blank"><i class="fa fa-github-square fa-1x footer-icon"></i></a>
+      <a href="mailto:joe@joeanguyen.com?Subject=Hello%20Joe!"><i class="fa fa-envelope fa-1x footer-icon"></i></a>
+    </div>
+
       <!-- JavaScript -->
-      <!-- // <script src="js/bootstrap.min.js"></script> -->
-      <!-- // <script src="js/jquery-1.6.1.min.js"></script> -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="js/init.js"></script>
       <script type="text/javascript" src="js/smoothscroll.js"></script>
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script type="text/javascript" src="js/navigationfade.js"></script>
     </body>
   </html>

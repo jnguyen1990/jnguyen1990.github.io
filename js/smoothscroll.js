@@ -198,6 +198,6 @@ if (!window['jQuery']) alert('The jQuery library must be included before the smo
 // Initialize all .smoothScroll links
 jQuery(function($) {
     $.localScroll({
-        filter: '.smoothScroll',offset:{top:-120}
+        filter: '.smoothScroll',offset:{top:-80}
     });
 });
